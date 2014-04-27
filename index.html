@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>WhirlWare</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="jquery/jquery.mobile.css" rel="stylesheet" type="text/css" />
+	<script src="jquery/jquery-1.6.4.min.js" charset="utf-8"></script>
+	<script src="jquery/jquery.mobile.js" charset="utf-8"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/plugins/Flashlight.js"></script>
+	<script src="flashlightexec.js"></script>
+	</head>
+		<body>
+		<script>
+		document.addEventListener("backbutton", function(e){
+				e.preventDefault();
+				navigator.app.exitApp();
+		}, false);
+		</script>
+		<div class="wrapper" >
+			<div id="button-on" class="buttonon">ON</div>
+			<div id="button-off" class="buttonoff">OFF</div>
+		</div>	
+		</body>
+</html>
